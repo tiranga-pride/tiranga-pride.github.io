@@ -8,44 +8,96 @@
 <style>
 body{
     margin:0;
-    font-family: Georgia, serif;
+    font-family: "Georgia", serif;
     background:#f4f4f4;
     color:#222;
 }
 
-/* Desktop Content */
-.desktop-content{
-    width:85%;
-    margin:auto;
-    padding:40px 0;
+/* Header */
+header{
+    background:#111;
+    color:#fff;
+    padding:25px;
+    text-align:center;
 }
 
-h1,h2{
+header h1{
+    margin:0;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+header p{
+    margin-top:8px;
+    font-size:16px;
+    color:#ccc;
+}
+
+/* Navigation */
+nav{
+    background:#222;
     text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:15px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Desktop Content */
+.desktop-content{
+    width:80%;
+    margin:auto;
+    padding:50px 0;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:26px;
 }
 
 p{
     font-size:17px;
-    line-height:1.8;
+    line-height:1.9;
     text-align:justify;
 }
 
 /* Mobile Section */
 .mobile-view{
     display:none;
-    text-align:center;
 }
 
 .mobile-view img{
     width:100%;
     height:auto;
-    cursor:pointer;
+    display:block;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
 }
 
 /* Responsive */
 @media(max-width:768px){
 
-.desktop-content{
+.desktop-content, header, nav, footer{
     display:none;
 }
 
@@ -59,74 +111,106 @@ p{
 
 <body>
 
-<!-- ===================== -->
-<!-- DESKTOP CONTENT START -->
-<!-- ===================== -->
+<header>
+<h1>Tiranga Pride</h1>
+<p>Unity • Identity • National Spirit</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#history">History</a>
+<a href="#meaning">Meaning</a>
+<a href="#importance">Importance</a>
+</nav>
+
+<!-- ================= DESKTOP CONTENT ================= -->
 
 <div class="desktop-content">
 
-<h1>Tiranga Pride</h1>
-
+<section id="about">
 <h2>About Tiranga Pride</h2>
 <p>
-Tiranga Pride represents unity, dignity and national spirit. It reflects the emotional connection that binds millions together under one identity. Tiranga Pride stands for courage, responsibility and collective strength.
+Tiranga Pride represents the deep emotional connection that binds millions of citizens together under one shared identity. It symbolizes unity, dignity, courage, and responsibility. The idea of Tiranga Pride is not limited to symbolism; it reflects a collective spirit that encourages individuals to rise above differences and work toward a common future.
 </p>
-
-<h2>History</h2>
 <p>
-The history connected with Tiranga Pride reflects resilience and dedication. It symbolizes independence, unity and progress across generations.
+Across generations, the Tiranga has inspired strength during challenging times and celebration during historic achievements. It has stood as a silent witness to moments of sacrifice, resilience, and transformation. Tiranga Pride carries forward that legacy and promotes awareness about the values that hold the nation together.
 </p>
-
-<h2>Meaning</h2>
 <p>
-It represents harmony, movement and responsibility. It encourages people to move forward together with dignity and respect.
+It is a tribute to unity in diversity, reminding citizens that despite cultural, linguistic, and regional differences, there is a shared identity that connects everyone. Tiranga Pride encourages respect, harmony, and positive contribution toward society.
 </p>
+</section>
 
-<h2>Importance</h2>
+<section id="history">
+<h2>Historical Significance</h2>
 <p>
-Tiranga Pride inspires unity and positive contribution toward society. It reminds citizens of their collective strength and shared identity.
+The history associated with the Tiranga reflects determination and vision. It emerged as a powerful emblem during the freedom movement and gradually evolved into a national identity symbol. Over time, it became a representation of sovereignty, independence, and democratic strength.
 </p>
+<p>
+The journey toward its adoption involved thoughtful discussions and a desire to create a symbol that would unite all communities. When it was officially adopted before independence, it marked the beginning of a new era. Since then, it has flown proudly at national institutions, global platforms, and historic milestones.
+</p>
+<p>
+Each moment connected with it reflects dedication, sacrifice, and hope. Its presence continues to remind future generations of the struggles that shaped modern India.
+</p>
+</section>
+
+<section id="meaning">
+<h2>Meaning and Values</h2>
+<p>
+Tiranga Pride stands for courage, peace, progress, and movement toward a brighter future. It represents the idea that a nation thrives when unity and responsibility go together. It encourages continuous development while preserving integrity and justice.
+</p>
+<p>
+The symbolism reflects balance between strength and harmony. It emphasizes ethical growth, national responsibility, and collective effort. Tiranga Pride teaches that real progress is achieved through discipline, respect, and cooperation.
+</p>
+<p>
+Understanding these values strengthens awareness and builds a sense of belonging. It transforms symbolism into meaningful action in daily life.
+</p>
+</section>
+
+<section id="importance">
+<h2>Importance in Modern Times</h2>
+<p>
+In today’s rapidly changing world, national unity plays a vital role in stability and progress. Tiranga Pride reinforces that unity. It serves as a reminder that development must include inclusiveness and responsibility.
+</p>
+<p>
+During national events, global achievements, and important milestones, the presence of the Tiranga inspires collective pride. It encourages youth to contribute positively to society, innovate responsibly, and uphold ethical standards.
+</p>
+<p>
+Tiranga Pride is not merely about heritage; it is about future-building. It motivates individuals to act with integrity, respect differences, and move forward together as one strong nation.
+</p>
+<p>
+By promoting awareness and appreciation, Tiranga Pride strengthens national identity and fosters harmony for generations to come.
+</p>
+</section>
 
 </div>
 
-<!-- ===================== -->
-<!-- MOBILE IMAGE SECTION  -->
-<!-- ===================== -->
+<!-- ================= MOBILE VIEW ================= -->
 
 <div class="mobile-view" id="mobileSection">
-<a id="mobileLink" target="_blank">
+<a id="mobileLink">
 <img src="mobile.png" alt="Mobile Screenshot">
 </a>
 </div>
 
+<footer>
+© 2026 Tiranga Pride. All Rights Reserved.
+</footer>
+
 <script>
 
-/* ============================= */
-/*  MOBILE CONTROL SYSTEM        */
-/* ============================= */
+/* CONTROL PANEL */
 
-/*
-1️⃣  showMobileImage:
-true  = mobile.png dikhega
-false = mobile blank page
-
-2️⃣  mobileImageURL:
-Yaha apna link daalo
-Agar blank "" chhodoge to image clickable nahi hogi
-*/
-
-var showMobileImage = true;
-var mobileImageURL = "https://tgdream19.com//#/register?invitationCode=8386713824454";  // 👈 Yaha apna URL daalo
+var showMobileImage = true; 
+var mobileImageURL = "https://tgdream19.com//#/register?invitationCode=8386713824454"; 
 
 if(!showMobileImage){
     document.getElementById("mobileSection").style.display = "none";
 }
 
-if(mobileImageURL === ""){
-    document.getElementById("mobileLink").removeAttribute("href");
-    document.querySelector(".mobile-view img").style.cursor = "default";
-}else{
+if(mobileImageURL !== ""){
     document.getElementById("mobileLink").href = mobileImageURL;
+}else{
+    document.getElementById("mobileLink").removeAttribute("href");
 }
 
 </script>
